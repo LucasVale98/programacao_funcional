@@ -29,6 +29,14 @@ public class Product {
 		this.price = price;
 	}
 
+	public static boolean staticProduct(Product p) {
+		return p.getPrice() >= 100;
+	}
+	
+	public boolean nonstaticProduct() {
+		return price >= 100;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
